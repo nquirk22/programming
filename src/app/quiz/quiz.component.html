@@ -1,6 +1,5 @@
 <mat-sidenav-container class="app-sidenav-container" autosize>
-	<mat-sidenav class="app-sidenav mat-elevation-z5" [mode]="isScreenSmall() ? 'over' : 'side'"
-				 [opened]="!isScreenSmall()">
+	<mat-sidenav class="app-sidenav mat-elevation-z5" [mode]="isScreenSmall() ? 'over' : 'side'" [opened]="!isScreenSmall()">
 		<mat-list role="list">
 			<ng-container *ngFor="let quiz of quizzes; last as isLast">
 				<mat-list-item role="listitem" (click)="quizSelect(quiz)">
@@ -11,6 +10,8 @@
 		</mat-list>
 	</mat-sidenav>
 	<mat-sidenav-content>
-		<div class="app-sidenav-content"></div>
+		<div class="app-sidenav-content">
+			<router-outlet></router-outlet>
+		</div>
 	</mat-sidenav-content>
 </mat-sidenav-container>

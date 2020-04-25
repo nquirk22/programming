@@ -33,6 +33,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -70,7 +71,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 		MatTabsModule,
 		MatToolbarModule,
 		MatTooltipModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
 	],
 	exports: [
 		CdkTableModule,
@@ -108,8 +109,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 		MatToolbarModule,
 		MatTooltipModule,
 		ReactiveFormsModule,
-
 		// Flex
+		FlexLayoutModule
 	]
 })
 export class MaterialModule {
