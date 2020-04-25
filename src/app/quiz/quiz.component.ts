@@ -10,7 +10,7 @@ const SMALL_WIDTH_BREAKPOINT = 720;
 	styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
-	quizzes: Quiz[] = [{name: 'Booleans'}];
+	quizzes: Quiz[] = [{name: 'Boolean'}];
 	private mediaMatcher: MediaQueryList =
 		matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`);
 

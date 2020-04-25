@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutGap="1rem">
+	<h2>Insert the correct operator to make the expression true.</h2>
+	<div fxLayout="row">
+		<ng-container *ngFor="let problem of fillBlankProblems">
+			<mat-card fxLayout="row" fxLayoutGap="1rem" fxLayoutAlign="center center" fxFlex="nogrow">
+				<button mat-raised-button color="primary">{{ problem.arguments[0] }}</button>
+				<mat-form-field fxFlex="3rem" class="no-padding">
+					<mat-label>{{ problem.answerDescription }}</mat-label>
+					<input matInput>
+				</mat-form-field>
+				<button mat-raised-button color="primary">{{ problem.arguments[1] }}</button>
+			</mat-card>
+		</ng-container>
+	</div>
+</div>

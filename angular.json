@@ -123,6 +123,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "aidan-programming"
+    }
+  },
+  "defaultProject": "aidan-programming",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
